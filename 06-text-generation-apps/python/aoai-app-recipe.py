@@ -24,7 +24,7 @@ filter = input("Filter (for example, vegetarian, vegan, or gluten-free: ")
 prompt = f"Show me {no_recipes} recipes for a dish with the following ingredients: {ingredients}. Per recipe, list all the ingredients used, no {filter}: "
 messages = [{"role": "user", "content": prompt}]
 
-completion = client.chat.completions.create(model=deployment, messages=messages, max_tokens=600, temperature = 0.1)
+completion = client.chat.completions.create(model=deployment, messages=messages, max_tokens=300, temperature = 0.1)
 
 
 # print response

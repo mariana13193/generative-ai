@@ -133,3 +133,4 @@ if response_message.function_call.name:
     )
 
     print(second_response.choices[0].message)
+
